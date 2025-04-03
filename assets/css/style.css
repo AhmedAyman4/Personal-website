@@ -233,11 +233,11 @@ nav {
   border-radius: 50%;
 }
 /* Style for navbar icons */
-/* .nav-link i {
+.nav-link i {
   margin-right: 5px;
-  font-size: 18px;
-  vertical-align: middle;
-} */
+  font-size: 15px;
+  /* vertical-align: middle; */
+}
 /* ----- WRAPPER DESIGN ----- */
 .wrapper {
   padding-inline: 10vw;
@@ -650,11 +650,11 @@ footer {
   margin-top: 10px;
 }
 /* Style for footer menu icons */
-/* .footer_menu_list a i {
+.footer_menu_list a i {
   margin-right: 5px;
   font-size: 16px;
-  vertical-align: middle;
-} */
+  /* vertical-align: middle; */
+}
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px) {
