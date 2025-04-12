@@ -28,6 +28,38 @@ function headerShadow() {
   }
 }
 
+/* ----- DARK MODE TOGGLE ----- */
+const themeToggle = document.querySelector(".theme-toggle");
+const themeToggleIcon = document.getElementById("theme-toggle-icon");
+
+// Check for saved theme preference or use device preference
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+const savedTheme = localStorage.getItem("theme");
+
+// Apply the saved theme or use device preference
+if (savedTheme === "dark" || (!savedTheme && prefersDarkScheme.matches)) {
+  document.documentElement.setAttribute("data-theme", "dark");
+  themeToggleIcon.classList.replace("uil-sun", "uil-moon");
+} else {
+  document.documentElement.setAttribute("data-theme", "light");
+  themeToggleIcon.classList.replace("uil-moon", "uil-sun");
+}
+
+// Toggle theme when button is clicked
+themeToggle.addEventListener("click", function () {
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+
+  if (currentTheme === "dark") {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+    themeToggleIcon.classList.replace("uil-moon", "uil-sun");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+    themeToggleIcon.classList.replace("uil-sun", "uil-moon");
+  }
+});
+
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
   strings: ["Data Scientist", "ML Engineer", "Python Developer"],
