@@ -114,14 +114,6 @@ var typingEffect = new Typed(".typedText", {
 - Edge (latest)
 - Opera (latest)
 
-## Deployment
-
-To deploy the website:
-
-1. Purchase a domain (optional)
-2. Upload files to your web hosting service via FTP
-3. Or deploy to GitHub Pages, Netlify, or Vercel for free hosting
-
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
