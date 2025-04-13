@@ -2,8 +2,6 @@
 
 A modern, responsive personal portfolio website for Ahmed Ayman, highlighting his skills, projects, and experience as a Data Scientist, ML Engineer, and Python Developer.
 
-![Ahmed Ayman Portfolio](https://via.placeholder.com/800x400?text=Ahmed+Ayman+Portfolio)
-
 ## Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices
